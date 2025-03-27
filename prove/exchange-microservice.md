@@ -20,7 +20,7 @@ Il backend e' costituito da tre microservizi scritti in NodeJS, ed un database P
 
 I microservizi devono comunicare tra loro in rete privata via GRPC, esponendo rispettivamente la porta 9000 (exchange) e 9001 (users). L' API invece è l'unico microservizio raggiungibile esternamente ed espone sulla porta 80 gli endpoint necessari al frontend per funzionare. Tutti i microservizi devono essere sviluppati in NodeJs e TypeScript.
 
-Suggeriamo di visionare un semplice esempio di implementazione di [GRPC](https://github.com/soluzionifutura/grpc-test)
+Suggeriamo di visionare un semplice esempio di implementazione di [GRPC](https://github.com/polarity-dev/grpc-test)
  
 Di seguito sono elencati più nello specifico i vari microservizi; NB. tutte le funzioni successivamente presentate hanno la funzione di chiarire le feature richieste e non sono da considerarsi necessariamente esaustive o immodificabili ma possono e devono adattarsi secondo le esigenze che eventualmente nasceranno durante lo sviluppo:
 
@@ -35,7 +35,7 @@ L'interfaccia di questo microservizio è quindi molto semplice ed espone una sol
 	- `withdraw(number value, string synbol)`: permette all'utente di spostare dalla piattaforma al suo iban la quantità di denaro specificata nella valuta specificata. NB. le due funzioni `deposit` e `withdraw` sono funzioni che simulano unicamente degli spostamenti di denaro limitandosi ad aggiornare dei valori sul DB dell'applicativo
 	- `buy(number value, string symbol)`: permette all'utente di comprare con una valuta la quantità specificata di denaro nell'altra valuta disponibile secondo il tasso di cambio recuperato dall'Exchange microservice; per ogni transazione è necessario archiviare in una tabella di DB appositamente strutturata tutte le informazioni riguardo l'operazione
 	- `listTransactions(object filter)`: permette all'utente di visualizzare le sue transazioni con la possibilità di filtrarle per date e/o valuta di riferimento
-- **API**: questo microservizio è l'unico accessibile direttamente dall'esterno e deve essere sviluppato usando Open Api ed Express [vedi esempio](https://github.com/soluzionifutura/open-api-demo). Lo scopo dell'api è quello di ricevere le chiamate dell'esterno e smistarle ai vari microservizi.
+- **API**: questo microservizio è l'unico accessibile direttamente dall'esterno e deve essere sviluppato usando Open Api ed Express [vedi esempio](https://github.com/polarity-dev/open-api-demo). Lo scopo dell'api è quello di ricevere le chiamate dell'esterno e smistarle ai vari microservizi.
 
 ### Frontend
 E’ richiesto lo sviluppo di una semplice pagina web interattiva che permetta l’interazione con tutte le componenti dell’API (signup, login, acquisto, vendita e visualizzazione ordini). Questa deve essere realizzata in TypeScript con React.

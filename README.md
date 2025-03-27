@@ -1,14 +1,14 @@
-# SF Academy  
+# Polarity Academy  
 
-istruzioni, materiale di studio e prove per candidarsi ad SF Academy
+Istruzioni, materiale di studio e prove per candidarsi a Polarity Academy
 
 ## Introduzione
 
-SF Academy è un percorso di formazione e selezione per candidati intern o collaboratori di Soluzioni Futura
+Polarity Academy è un percorso di formazione e selezione per candidati intern o collaboratori di Polarity
 
 ### Percorsi
 
-ogni utente può candidarsi a sostenere una delle seguenti prove suddivise per area di competenza e livello di difficoltà:
+Ogni utente può candidarsi a sostenere una delle seguenti prove suddivise per area di competenza e livello di difficoltà:
 
 - [intern-developer.md](./prove/intern-developer.md) <img src = "https://img.shields.io/static/v1?label=level&message=easy&color=green"> <img src = "https://img.shields.io/static/v1?label=&message=web-development&color=informational">
 
@@ -21,7 +21,7 @@ ogni utente può candidarsi a sostenere una delle seguenti prove suddivise per a
 ### Per candidarsi a sostenere una prova è necessario:  
 
 - creare una issue su questa repository che abbia come titolo il proprio nome e cognome specificando nel testo per quale prova ci si candida
-- creare un fork del repository `soluzionifutura/sf-academy` e aprire una pull request con la prova realizzata entro la deadline comunicata come risposta alla candidatura da [**allemonta**](https://github.com/allemonta)
+- creare un fork del repository `polarity-dev/polarity-academy` e aprire una pull request con la prova realizzata entro la deadline comunicata come risposta alla candidatura da [**allemonta**](https://github.com/allemonta)
 - al termine della prova richiedere la review di [**allemonta**](https://github.com/allemonta)
 - attendere responso
 
